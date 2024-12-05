@@ -1,0 +1,608 @@
+* {
+    background-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    top: 0;
+    background-color: #957DAD;
+    left: 0;
+    height: 55px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 0px;
+    float: inline-start;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: unset;
+    color: beige;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 5px;
+    padding: 0;
+    display: flex;
+    font-size: 10px;
+}
+
+nav ul li a {
+    line-height: 15px;
+    color: #371955;
+    margin-right: 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-size: 17px;
+}
+
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 500px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+.nav-search:hover {
+    border: 2px solid #7b2ec9;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 40px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-input {
+    width: 450px;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #371955;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+
+/* Reset and Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b5a3c7;
+}
+
+
+/* Container for Sidebar and Products */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Hide Radio Buttons */
+
+.container input[type="radio"] {
+    display: none;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar {
+    width: 250px;
+    background-color: #9f7cc1;
+    padding: 20px;
+    border-right: 1px solid #b5a3c7;
+}
+
+.sidebar img {
+    border-radius: 60%;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+
+/* Category Labels as Buttons */
+
+.sidebar label {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #b5a3c7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar label:hover {
+    background-color: #8868a7;
+}
+
+
+/* Highlight Selected Category */
+
+.container #category1:checked~.sidebar label[for="category1"],
+.container #category2:checked~.sidebar label[for="category2"],
+.container #category3:checked~.sidebar label[for="category3"],
+.container #category4:checked~.sidebar label[for="category4"],
+.container #category5:checked~.sidebar label[for="category5"],
+.container #category6:checked~.sidebar label[for="category6"] {
+    background-color: #7b5b9c;
+    color: #fff;
+}
+
+
+/* Products Section */
+
+.products {
+    flex: 1;
+    padding: 20px;
+    background-color: #c090f1;
+}
+
+
+/* Hide All Product Lists Initially */
+
+.product-list {
+    display: none;
+}
+
+
+/* Show Product List When Corresponding Radio Button is Checked */
+
+.container #category1:checked~.products .category1,
+.container #category2:checked~.products .category2,
+.container #category3:checked~.products .category3,
+.container #category4:checked~.products .category4,
+.container #category5:checked~.products .category5,
+.container #category6:checked~.products .category6 {
+    display: block;
+}
+
+
+/* Product Grid */
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Product Card Styles */
+
+.product-card {
+    background-color: #d0b4eb;
+    width: calc(33.333% - 20px);
+    border: 1px solid #a291b3;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-card p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 16px;
+}
+
+.product-card .quick-view-btn {
+    padding: 8px 16px;
+    background-color: #7b5b9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card .quick-view-btn:hover {
+    background-color: #7b5b9c;
+}
+
+
+/* Popup Overlay Styles */
+
+.popup-overlay {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+/* Popup Content Styles */
+
+.popup {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    animation: fadeIn 0.3s;
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.popup h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.popup p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.popup .buy-now-btn {
+    margin-top: 10px;
+    font-size: large;
+    padding: 10px 25px;
+    background-color: #7b5b9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup .buy-now-btn:hover {
+    background-color: #7b5b9c;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+/* Animation for Popup */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #fff;
+    }
+    .product-card {
+        width: 100%;
+    }
+}
+
+
+/* Container for Sidebar and Products */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Hide Radio Buttons */
+
+.container input[type="radio"] {
+    display: none;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar {
+    width: 250px;
+    background-color: #9f7cc1;
+    padding: 20px;
+    border-right: 1px solid #b5a3c7;
+}
+
+.sidebar img {
+    border-radius: 60%;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+
+/* Category Labels as Buttons */
+
+.sidebar label {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #b5a3c7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar label:hover {
+    background-color: #8868a7;
+}
+
+
+/* Highlight Selected Category */
+
+.container #category1:checked~.sidebar label[for="category1"],
+.container #category2:checked~.sidebar label[for="category2"],
+.container #category3:checked~.sidebar label[for="category3"],
+.container #category4:checked~.sidebar label[for="category4"],
+.container #category5:checked~.sidebar label[for="category5"],
+.container #category6:checked~.sidebar label[for="category6"] {
+    background-color: #7b5b9c;
+    color: #fff;
+}
+
+
+/* Products Section */
+
+.products {
+    flex: 1;
+    padding: 20px;
+    background-color: #c090f1;
+}
+
+
+/* Hide All Product Lists Initially */
+
+.product-list {
+    display: none;
+}
+
+
+/* Show Product List When Corresponding Radio Button is Checked */
+
+.container #category1:checked~.products .category1,
+.container #category2:checked~.products .category2,
+.container #category3:checked~.products .category3,
+.container #category4:checked~.products .category4,
+.container #category5:checked~.products .category5,
+.container #category6:checked~.products .category6 {
+    display: block;
+}
+
+
+/* Product Grid */
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Product Card Styles */
+
+.product-card {
+    background-color: #d0b4eb;
+    width: calc(33.333% - 20px);
+    border: 1px solid #a291b3;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-card p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #fff;
+    }
+    .product-card {
+        width: 100%;
+    }
+}
+
+.footer {
+    background-color: #957DAD;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 0%;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background-color: #371955;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-methods {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.payment-methods img {
+    margin: 0 5px;
+    width: 50px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}

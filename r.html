@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .phalaana {
+            background-color: #957DAD;
+            margin-top: 3px;
+        }
+        
+        header {
+            background-color: #957DAD;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .app-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .app-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        
+        .app-details {
+            margin-left: 10px;
+        }
+        
+        .app-details h2 {
+            color: #333;
+        }
+        
+        .app-details p {
+            color: #070707;
+        }
+        /* Review Section */
+        
+        .reviews {
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 60px;
+        }
+        
+        .reviews h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #010911;
+        }
+        /* Grid for Reviews */
+        
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            justify-content: space-between;
+        }
+        
+        .review {
+            display: flex;
+            padding: 5px;
+            border-radius: 8px;
+            align-items: center;
+            font-weight: bolder;
+            font-weight: bolder;
+            font-style: bolder;
+            color: black;
+        }
+        
+        .review img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .review-content {
+            max-width: 50%;
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .review-header h3 {
+            margin: 0;
+            color: #f7f7f7;
+        }
+        
+        .rating {
+            font-size: 1.2em;
+            color: #f39c12;
+        }
+        
+        .review p {
+            margin: 10px 0 0 0;
+            color: #020202;
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 768px) {
+            .app-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .app-image img {
+                width: 120px;
+                height: 120px;
+            }
+            .app-details {
+                text-align: center;
+                margin-left: 0;
+            }
+            .review-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .review {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .review img {
+                margin-bottom: 4px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <title>firstcry</title>
+</head>
+
+<body>
+    <nav>
+        <h1><img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\l.png" alt="" height="45" width="150"></h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#abc">Products</a></li>
+            <li><a href="r.html">Review</a></li>
+            <li>
+                <a href="#"><img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a.png" alt="Cart" height="20" width="30"></a>
+            </li>
+        </ul>
+
+        <center>
+            <div class="nav-search">
+                <select class="search-select">
+                <option value="">All</option>
+            </select>
+                <input class="search-input" type="text" placeholder="Search Products">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </center>
+    </nav>
+    <div class="phalaana">
+        <header>
+            <h1>FirstCry App Reviews</h1>
+        </header>
+
+        <section class="app-info">
+            <div class="app-image">
+                <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\l.png" alt="App Image" height="200" width="200">
+            </div>
+            <div class="app-details">
+                <h2>FirstCry App</h2>
+                <p>Discover a wide range of baby and kids' products, order effortlessly, and get them delivered at your doorstep!</p>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+
+            <div class="review-grid">
+
+                <!-- Review 1 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\i.jpg" alt="John Doe">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>John Doe</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>This app is a lifesaver! So easy to navigate, and I can find all my baby essentials in one place. The delivery is super quick too!</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\b.jpg" alt="Jane Smith">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Jane Smith</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>I love the variety of products on the FirstCry app. It's user-friendly and has great deals. I’ve never had any issues with my orders!</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\c.jpg" alt="Alice Johnson">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Alice Johnson</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>The app is amazing! It’s so convenient to shop for my baby, and the delivery service is outstanding. Highly recommend!</p>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\d.jpg" alt="Bob Brown">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Bob Brown</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>Very smooth experience with the app. I can easily track my orders and the customer support is very responsive. Five stars!</p>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\e.jpg" alt="Samantha Green">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Samantha Green</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>Such a great app for new parents. The notifications on deals and new products make sure I never miss out. Highly recommend FirstCry!</p>
+                    </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\f.jpg" alt="Tom White">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Tom White</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>FirstCry app is a must-have for parents. The UI is simple and the product range is vast. Plus, the delivery is always on time!</p>
+                    </div>
+                </div>
+
+                <!-- Review 7 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\g.jpg" alt="Nancy Lee">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Nancy Lee</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>I’ve been using the FirstCry app for months now, and it never disappoints. The deals are great and I can easily shop for everything I need for my baby.</p>
+                    </div>
+                </div>
+
+                <!-- Review 8 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\h.jpg" alt="Kevin Adams">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Kevin Adams</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>Super easy to use app with a great selection of baby products. The delivery is always fast and reliable. Excellent service!</p>
+                    </div>
+                </div>
+
+                <!-- Review 9 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\a.jpg" alt="Emma Wilson">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Emma Wilson</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>Love the FirstCry app! It makes shopping for my baby so convenient. Everything is delivered quickly, and I never have to worry about quality.</p>
+                    </div>
+                </div>
+
+                <!-- Review 10 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\j.jpg" alt="Chris Davis">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Chris Davis</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>The app is really well-designed, easy to use, and has a lot of great offers. My go-to app for baby products!</p>
+                    </div>
+                </div>
+
+                <!-- Review 11 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\c.jpg" alt="Kate Thomas">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Kate Thomas</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>FirstCry’s app is my favorite! It’s super easy to browse products, place orders, and track delivery. Excellent overall!</p>
+                    </div>
+                </div>
+
+                <!-- Review 12 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\a.jpg" alt="Oliver Harris">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Oliver Harris</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>The FirstCry app has been a game-changer. Shopping for my baby has never been this easy. Great service and fast delivery!</p>
+                    </div>
+                </div>
+
+                <!-- Review 13 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\b.jpg" alt="Sophia King">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Sophia King</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>I love this app! It makes shopping for baby items so convenient, and I always find what I need at the best prices.</p>
+                    </div>
+                </div>
+
+                <!-- Review 14 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\d.jpg" alt="Mike Taylor">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Mike Taylor</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>Best shopping experience ever! The FirstCry app is intuitive, and the customer service is excellent. 5 stars!</p>
+                    </div>
+                </div>
+
+                <!-- Review 15 -->
+                <div class="review">
+                    <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\review\f.jpg" alt="Grace Hall">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3>Grace Hall</h3>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>This app is a must-have for parents. The product quality is always reliable, and delivery is fast. Totally recommend!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>Newsletter Signup</h4>
+                <p>Subscribe for the latest updates and offers!</p>
+                <input type="email" placeholder="Enter your email">
+                <button type="button">Subscribe</button>
+            </div>
+            <div class="payment-methods">
+                <h4>Payment Methods</h4>
+                <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\visa.png" alt="Visa">
+                <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\master.png" alt="MasterCard">
+                <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\pp.png" alt="PayPal">
+                <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\phonepe.png" alt="PhonePe">
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

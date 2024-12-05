@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>firstcry</title>
+</head>
+
+<body>
+    <nav>
+        <h1><img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\l.png" alt="" height="45" width="150"></h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#abc">Products</a></li>
+            <li><a href="#">Review</a></li>
+            <li>
+                <a href="cart.html" class="cart-link"><img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a.png" alt="Cart" height="20" width="30"> (<span id="cart-count">0</span>)</a>
+            </li>
+        </ul>
+
+        <center>
+            <div class="nav-search">
+                <select class="search-select">
+                <option value="">All</option>
+            </select>
+                <input class="search-input" type="text" placeholder="Search Products">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </center>
+    </nav>
+    <div class="bg">
+        <div class="container">
+            <!-- Radio Inputs (Placed at the top level inside .container) -->
+            <input type="radio" name="category" id="category1" checked>
+            <input type="radio" name="category" id="category2">
+            <input type="radio" name="category" id="category3">
+            <input type="radio" name="category" id="category4">
+            <input type="radio" name="category" id="category5">
+            <input type="radio" name="category" id="category6">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h2>Categories</h2>
+                <label for="category1"><img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a35.jpg" alt="" height="70" width="70">Clothes</label>
+                <label for="category2"><img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a29.jpg" alt="" height="70" width="70">Toys</label>
+                <label for="category3"> <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a4.jpg" alt="" height="70" width="70">Footwear</label>
+                <label for="category4"><img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a22.jpg" alt="" height="70" width="70">Cribes</label>
+                <label for="category5"> <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a43.jpg" alt="" height="70" width="70">Diapers</label>
+                <label for="category6"><img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a14.jpg" alt="" height="70" width="70">Bathing</label>
+                <a href="cart.html" class="cart-link">View Cart (<span id="cart-count">0</span>)</a>
+            </div>
+            <div class="products">
+                <div class="product-list category1">
+                    <center>
+                        <h2>CLOTHES</h2>
+                    </center>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a31.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CLOTHING</h3>
+                            <p>₹1500</p>
+                            <button class="quick-view-btn" data-title="CLOTHING" data-price="₹1500" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a31.jpg">
+                                VIEW PRODUCT
+                               </button>
+                            <button class="add-to-cart-btn" data-title="CLOTHING" data-price="₹1500" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a31.jpg">
+                                ADD TO CART
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a32.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CLOTHING</h3>
+                            <p>₹1200</p>
+                            <button class="quick-view-btn" data-title="CLOTHING" data-price="₹1200" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a32.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a33.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CLOTHING</h3>
+                            <p>₹1900</p>
+                            <button class="quick-view-btn" data-title="CLOTHING" data-price="₹1900" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a33.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a34.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CLOTHING</h3>
+                            <p>₹1750</p>
+                            <button class="quick-view-btn" data-title="CLOTHING" data-price="₹1750" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a34.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a35.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CLOTHING</h3>
+                            <p>₹2200</p>
+                            <button class="quick-view-btn" data-title="CLOTHING" data-price="₹2200" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a35.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a36.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CLOTHING</h3>
+                            <p>₹1800</p>
+                            <button class="quick-view-btn" data-title="CLOTHING" data-price="₹1800" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a36.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list category2">
+                    <center>
+                        <h2>TOYS</h2>
+                    </center>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a25.jpg" alt="Image 1" height="100" width="100">
+                            <h3>TOYS</h3>
+                            <p>₹1100</p>
+                            <button class="quick-view-btn" data-title="TOYS" data-price="₹1100" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a25.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a26.jpg" alt="Image 1" height="100" width="100">
+                            <h3>TOYS</h3>
+                            <p>₹800</p>
+                            <button class="quick-view-btn" data-title="TOYS" data-price="₹800" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a26.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a27.jpg" alt="Image 1" height="100" width="100">
+                            <h3>TOYS</h3>
+                            <p>₹2800</p>
+                            <button class="quick-view-btn" data-title="TOYS" data-price="₹2800" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a27.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a28.jpg" alt="Image 1" height="100" width="100">
+                            <h3>TOYS</h3>
+                            <p>₹800</p>
+                            <button class="quick-view-btn" data-title="TOYS" data-price="₹800" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a28.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a29.jpg" alt="Image 1" height="100" width="100">
+                            <h3>TOYS</h3>
+                            <p>₹1200</p>
+                            <button class="quick-view-btn" data-title="TOYS" data-price="₹1200" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a29.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a30.jpg" alt="Image 1" height="100" width="100">
+                            <h3>TOYS</h3>
+                            <p>₹1350</p>
+                            <button class="quick-view-btn" data-title="TOYS" data-price="₹1350" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a30.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list category3">
+                    <center>
+                        <h2>FOOTWEAR</h2>
+                    </center>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a4.jpg" alt="Image 1" height="100" width="100">
+                            <h3>FOOTWEAR</h3>
+                            <p>₹1100</p><button class="quick-view-btn" data-title="FOOTWEAR" data-price="₹1100" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a4.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a5.jpg" alt="Image 1" height="100" width="100">
+                            <h3>FOOTWEAR</h3>
+                            <p>₹1300</p>
+                            <button class="quick-view-btn" data-title="FOOTWEAR" data-price="₹1300" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a5.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a6.jpg" alt="Image 1" height="100" width="100">
+                            <h3>FOOTWEAR</h3>
+                            <p>₹1650</p>
+                            <button class="quick-view-btn" data-title="FOOTWEAR" data-price="₹1650" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a6.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a2.jpg" alt="Image 1" height="100" width="100">
+                            <h3>FOOTWEAR</h3>
+                            <p>₹1600</p>
+                            <button class="quick-view-btn" data-title="FOOTWEAR" data-price="₹1600" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a2.jpg">
+                                VIEW PRODUCT
+                            </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a1.jpg" alt="Image 1" height="100" width="100">
+                            <h3>FOOTWEAR</h3>
+                            <p>₹1800</p>
+                            <button class="quick-view-btn" data-title="FOOTWEAR" data-price="₹1800" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a1.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a4.jpg" alt="Image 1" height="100" width="100">
+                            <h3>FOOTWEAR</h3>
+                            <p>₹1000</p>
+                            <button class="quick-view-btn" data-title="FOOTWEAR" data-price="₹1000" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a1.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list category4">
+                    <center>
+                        <h2>CRIBES</h2>
+                    </center>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a19.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CRIBES</h3>
+                            <p>₹3800</p>
+                            <button class="quick-view-btn" data-title="CRIBES" data-price="₹3800" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a19.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a20.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CRIBES</h3>
+                            <p>₹4600</p>
+                            <button class="quick-view-btn" data-title="CRIBES" data-price="₹4600" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a20.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a21.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CRIBES</h3>
+                            <p>₹3700</p>
+                            <button class="quick-view-btn" data-title="CRIBES" data-price="₹3700" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a21.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a22.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CRIBES</h3>
+                            <p>₹5700</p>
+                            <button class="quick-view-btn" data-title="CRIBES" data-price="₹5700" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a22.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a23.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CRIBES</h3>
+                            <p>₹4500</p>
+                            <button class="quick-view-btn" data-title="CRIBES" data-price="₹4500" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a23.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a24.jpg" alt="Image 1" height="100" width="100">
+                            <h3>CRIBES</h3>
+                            <p>₹3200</p>
+                            <button class="quick-view-btn" data-title="CRIBES" data-price="₹3200" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a24.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list category5">
+                    <center>
+                        <h2>DIAPERS</h2>
+                    </center>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a43.jpg" alt="Image 1" height="100" width="100">
+                            <h3>DIAPERS</h3>
+                            <p>₹1100</p>
+                            <button class="quick-view-btn" data-title="DIAPERS" data-price="₹1100" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a43.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a44.jpg" alt="Image 1" height="100" width="100">
+                            <h3>DIAPERS</h3>
+                            <p>₹1500</p>
+                            <button class="quick-view-btn" data-title="DIAPERS" data-price="₹1500" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a44.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a45.jpg" alt="Image 1" height="100" width="100">
+                            <h3>DIAPERS</h3>
+                            <p>₹1800</p>
+                            <button class="quick-view-btn" data-title="DIAPERS" data-price="₹1800" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a45.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a46.jpg" alt="Image 1" height="100" width="100">
+                            <h3>DIAPERS</h3>
+                            <p>₹1600</p>
+                            <button class="quick-view-btn" data-title="DIAPERS" data-price="₹1600" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a46.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a47.jpg" alt="Image 1" height="100" width="100">
+                            <h3>DIAPERS</h3>
+                            <p>₹1250</p>
+                            <button class="quick-view-btn" data-title="DIAPERS" data-price="₹1250" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a47.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a48.jpg" alt="Image 1" height="100" width="100">
+                            <h3>DIAPERS</h3>
+                            <p>₹1300</p>
+                            <button class="quick-view-btn" data-title="DIAPERS" data-price="₹1300" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a48.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list category6">
+                    <center>
+                        <h2>BATHING</h2>
+                    </center>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a13.jpg" alt="Image 1" height="100" width="100">
+                            <h3>BATHING</h3>
+                            <p>₹800</p>
+                            <button class="quick-view-btn" data-title="BATHING" data-price="₹800" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a13.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a14.jpg" alt="Image 1" height="100" width="100">
+                            <h3>BATHING</h3>
+                            <p>₹650</p>
+                            <button class="quick-view-btn" data-title="BATHING" data-price="₹650" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a14.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a15.jpg" alt="Image 1" height="100" width="100">
+                            <h3>BATHING</h3>
+                            <p>₹1000</p>
+                            <button class="quick-view-btn" data-title="BATHING" data-price="₹1000" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a15.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a16.jpg" alt="Image 1" height="100" width="100">
+                            <h3>BATHING</h3>
+                            <p>₹900</p>
+                            <button class="quick-view-btn" data-title="BATHING" data-price="900" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a16.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a17.jpg" alt="Image 1" height="100" width="100">
+                            <h3>BATHING</h3>
+                            <p>₹580</p>
+                            <button class="quick-view-btn" data-title="BATHING" data-price="580" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a17.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                        <div class="product-card">
+                            <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a18.jpg" alt="Image 1" height="100" width="100">
+                            <h3>BATHING</h3>
+                            <p>₹700</p>
+                            <button class="quick-view-btn" data-title="BATHING" data-price="₹700" data-image="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\a18.jpg">
+                                VIEW PRODUCT
+                               </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <img src="" alt="Product Image" id="popupImage">
+            <h3 id="popupTitle">Product Title</h3>
+            <p id="popupPrice">Price: ₹0.00</p>
+            <p id="popupDescription">Product description goes here.</p>
+            <button class="buy-now-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add To Cart</button>
+        </div>
+    </div>
+
+    <script>
+        // Get all "Quick View" buttons
+        const quickViewButtons = document.querySelectorAll('.quick-view-btn');
+
+        // Get popup elements
+        const popupOverlay = document.getElementById('popupOverlay');
+        const closeBtn = document.getElementById('closeBtn');
+        const popupImage = document.getElementById('popupImage');
+        const popupTitle = document.getElementById('popupTitle');
+        const popupPrice = document.getElementById('popupPrice');
+        const popupDescription = document.getElementById('popupDescription');
+
+        // Function to open popup with product details
+        quickViewButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const title = button.getAttribute('data-title');
+                const price = button.getAttribute('data-price');
+                const description = button.getAttribute('data-description');
+                const image = button.getAttribute('data-image');
+
+                popupImage.src = image;
+                popupTitle.textContent = title;
+                popupPrice.textContent = `Price: ${price}`;
+                popupDescription.textContent = description;
+
+                popupOverlay.style.display = 'flex';
+            });
+        });
+
+        // Function to close popup
+        const closePopup = () => {
+            popupOverlay.style.display = 'none';
+        };
+
+        // Event listener for close button
+        closeBtn.addEventListener('click', closePopup);
+
+        // Event listener for clicking outside the popup content
+        window.addEventListener('click', (e) => {
+            if (e.target === popupOverlay) {
+                closePopup();
+            }
+        });
+    </script>
+    <script src="y.js"></script>
+    <div class="footer">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>Newsletter Signup</h4>
+                <p>Subscribe for the latest updates and offers!</p>
+                <input type="email" placeholder="Enter your email">
+                <button type="button">Subscribe</button>
+            </div>
+            <div class="payment-methods">
+                <h4>Payment Methods</h4>
+                <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\visa.png" alt="Visa">
+                <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\master.png" alt="MasterCard">
+                <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\pp.png" alt="PayPal">
+                <img src="C:\Users\HP\Desktop\projects\E-commerce\first cry\images\phonepe.png" alt="PhonePe">
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
